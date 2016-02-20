@@ -10,7 +10,7 @@
 
 *** Emacs compiled with "srgb" on Mac OS
 
-    You may need to set `ns-use-srgb-colorspace` to `nil` to avoid separator colors wrong
+    You may need to set 'ns-use-srgb-colorspace' to 'nil' to avoid separator colors wrong
     #+BEGIN_SRC emacs-lisp
     (setq ns-use-srgb-colorspace nil)
     #+END_SRC
