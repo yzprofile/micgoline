@@ -5,3 +5,36 @@
 ** Screen
    [[screen.png]]
    [[screen2.png]]
+
+** BTW
+
+*** Emacs compiled with "srgb" on Mac OS
+
+    You may need to set `ns-use-srgb-colorspace` to `nil` to avoid separator colors wrong
+    #+BEGIN_SRC emacs-lisp
+    (setq ns-use-srgb-colorspace nil)
+    #+END_SRC
+
+*** Change the Separator
+    
+    #+BEGIN_SRC emacs-lisp
+      'alternate
+      'arrow
+      'arrow-fade
+      'bar
+      'box
+      'brace
+      'butt
+      'chamfer
+      'contour
+      'curve
+      'rounded
+      'roundstub
+      'slant
+      'wave
+      'zigzag
+      'utf-8
+      'nil
+
+      (setq powerline-default-separator 'slant)
+    #+END_SRC
