@@ -32,42 +32,42 @@
 
 (require 'powerline)
 
-(defface pl-active-blue
+(defface micgoline-pl-active-blue
   '((t (:background "#4885ed" :foreground "#FFFFFF" :inherit mode-line)))
   "P face blue."
   :group 'powerline)
 
-(defface pl-inactive-blue
+(defface micgoline-pl-inactive-blue
   '((t (:background "#00A1F1" :foreground "#FFFFFF" :inherit mode-line-inactive)))
   "P face blue."
   :group 'powerline)
 
-(defface pl-active-green
+(defface micgoline-pl-active-green
   '((t (:background "#3cba54" :foreground "#FFFFFF" :inherit mode-line)))
   "P face green."
   :group 'powerline)
 
-(defface pl-inactive-green
+(defface micgoline-pl-inactive-green
   '((t (:background "#7CBB00" :foreground "#FFFFFF" :inherit mode-line-inactive)))
   "P face green."
   :group 'powerline)
 
-(defface pl-active-red
+(defface micgoline-pl-active-red
   '((t (:background "#db3236" :foreground "#FFFFFF" :inherit mode-line)))
   "P face red."
   :group 'powerline)
 
-(defface pl-inactive-red
+(defface micgoline-pl-inactive-red
   '((t (:background "#F65314" :foreground "#FFFFFF" :inherit mode-line-inactive)))
   "P face red."
   :group 'powerline)
 
-(defface pl-active-yellow
+(defface micgoline-pl-active-yellow
   '((t (:background "#f4c20d" :foreground "#FFFFFF" :inherit mode-line)))
   "P face yellow."
   :group 'powerline)
 
-(defface pl-inactive-yellow
+(defface micgoline-pl-inactive-yellow
   '((t (:background "#FFBB00" :foreground "#FFFFFF" :inherit mode-line-inactive)))
   "P face yellow."
   :group 'powerline)
@@ -76,7 +76,7 @@
 (setq powerline-default-separator 'slant)
 
 
-(defun load-micgoline-theme ()
+(defun micgoline-load-theme ()
   "Setup the default mode-line."
   (interactive)
   (setq-default
@@ -85,10 +85,10 @@
      (:eval
       (let* ((active (powerline-selected-window-active))
              (mode-line (if active 'mode-line 'mode-line-inactive))
-             (blue (if active 'pl-active-blue 'pl-inactive-blue))
-             (green (if active 'pl-active-green 'pl-inactive-green))
-             (red (if active 'pl-active-red 'pl-inactive-red))
-             (yellow (if active 'pl-active-yellow 'pl-inactive-yellow))
+             (blue (if active 'micgoline-pl-active-blue 'micgoline-pl-inactive-blue))
+             (green (if active 'micgoline-pl-active-green 'micgoline-pl-inactive-green))
+             (red (if active 'micgoline-pl-active-red 'micgoline-pl-inactive-red))
+             (yellow (if active 'micgoline-pl-active-yellow 'micgoline-pl-inactive-yellow))
              (separator-right (intern (format "powerline-%s-%s"
                                               (powerline-current-separator)
                                               (car powerline-default-separator-dir))))
@@ -142,7 +142,7 @@
                 (powerline-fill green (powerline-width rhs))
                 (powerline-render rhs)))))))
 
-(load-micgoline-theme)
+(micgoline-load-theme)
 
 (provide 'micgoline)
 
