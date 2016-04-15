@@ -1,4 +1,4 @@
-;;; micgoline.el --- Modeline configuration library for powerline
+;;; micgoline.el --- powerline mode, color schemes from microsoft and google's logo.
 
 ;; Copyright (C) 2016 yzprofile
 ;;
