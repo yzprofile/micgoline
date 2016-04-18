@@ -6,9 +6,16 @@
    [[screen.png]]
    [[screen2.png]]
 
+** Install
+
+   #+BEGIN_SRC emacs-lisp
+     `M-x` package-install micgoline
+     (require 'micgoline)
+   #+END_SRC
+
 ** BTW
 
-*** Emacs compiled with "srgb" on Mac OS
+*** For Emacs which compiled with "srgb" on Mac OSX
 
     You may need to set 'ns-use-srgb-colorspace' to 'nil' to avoid separator colors wrong
     #+BEGIN_SRC emacs-lisp
